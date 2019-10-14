@@ -7,14 +7,16 @@
 # 82
 # pblm num 73
 # done
+
 import math
 N = int(input())
-digits = []
+digits = 0
 while N > 0:
     temp = math.floor(N % 10)
-    digits.append(temp)
+    digits += (temp**2)
     N = math.floor(N/10)
 sum = 0
-for each in digits:
-    sum += (each**2)
-print(sum)
+# for each in digits:
+#     sum += (each**2)
+print(digits)
+# print(sum(digits))
