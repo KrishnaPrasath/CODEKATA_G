@@ -6,6 +6,8 @@
 # OUTPUT
 # 1 3
 
+# done 20c
+
 N = input()
 
 countOfOdd = []
@@ -21,7 +23,7 @@ def checkOdd(N, countOfOdd):
 checkOdd(N, countOfOdd)
 
 
-if countOfOdd == 0:
+if len(countOfOdd) == 0:
     print(-1)
 else:
     print(*countOfOdd)
